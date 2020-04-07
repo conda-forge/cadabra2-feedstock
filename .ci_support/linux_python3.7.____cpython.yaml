@@ -1,0 +1,46 @@
+boost_cpp:
+- 1.70.0
+c_compiler:
+- gcc
+c_compiler_version:
+- '7'
+cairo:
+- '1.16'
+channel_sources:
+- conda-forge,defaults
+channel_targets:
+- conda-forge main
+cxx_compiler:
+- gxx
+cxx_compiler_version:
+- '7'
+docker_image:
+- condaforge/linux-anvil-comp7
+glib:
+- '2.58'
+gmp:
+- '6'
+jsoncpp:
+- 1.8.4
+libuuid:
+- 2.32.1
+pin_run_as_build:
+  boost-cpp:
+    max_pin: x.x.x
+  cairo:
+    max_pin: x.x
+  gmp:
+    max_pin: x
+  jsoncpp:
+    max_pin: x.x.x
+  libuuid:
+    max_pin: x
+  python:
+    min_pin: x.x
+    max_pin: x.x
+  sqlite:
+    max_pin: x
+python:
+- 3.7.* *_cpython
+sqlite:
+- '3'
