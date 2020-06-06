@@ -3,18 +3,13 @@
 REL_SP_DIR=$(python -c "import os;print(os.path.relpath(os.getenv('SP_DIR'), os.getenv('PREFIX')))")
 sed -i.bak "s@set(PYTHON_SITE_PATH.*@set(PYTHON_SITE_PATH $REL_SP_DIR)@g" CMakeLists.txt
 
-ln -sf $PREFIX/x86_64-conda-linux-gnu $PREFIX/x86_64-conda_cos6-linux-gnu
-
 mkdir build
 cd build
-
-export CXXFLAGS="$CXXFLAGS -UNDEBUG"
-export CFLAGS="$CFLAGS -UNDEBUG"
 
 cmake \
   -DCMAKE_PREFIX_PATH=$PREFIX \
   -DCMAKE_INSTALL_PREFIX=$PREFIX \
-  -DCMAKE_BUILD_TYPE=Debug \
+  -DCMAKE_BUILD_TYPE=Release \
   -DENABLE_SYSTEM_JSONCPP=ON \
   -DENABLE_MATHEMATICA=OFF \
   -DENABLE_FRONTEND=ON \
