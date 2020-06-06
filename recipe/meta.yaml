@@ -177,7 +177,10 @@ about:
   home: https://github.com/kpeeters/cadabra2
   license: GPL-3.0-only
   license_family: GPL
-  license_file: LICENSE
+  license_file:
+    - LICENSE
+    - libs/websocketpp/COPYING
+    - libs/pybind11/LICENSE
   summary: 'a field-theory motivated approach to computer algebra'
 
 extra:
