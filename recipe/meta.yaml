@@ -181,6 +181,9 @@ about:
     - LICENSE
     - libs/websocketpp/COPYING
     - libs/pybind11/LICENSE
+    - libs/linenoise/LICENSE
+    - libs/tiny-process-library/LICENSE
+    - libs/whereami/LICENSE.WTFPLv2
   summary: 'a field-theory motivated approach to computer algebra'
 
 extra:
