@@ -122,7 +122,7 @@ outputs:
         - python
         - {{ pin_subpackage("cadabra2", exact=True) }}
       run_constrained:
-        - cadabra-jupyter-kernel {{ version }}
+        - cadabra2-jupyter-kernel {{ version }}
     files:
       - bin/cadabra2-gtk
       - bin/cadabra2latex
@@ -142,7 +142,7 @@ outputs:
       commands:
         - test -f $PREFIX/bin/cadabra2-gtk
 
-  - name: cadabra-jupyter-kernel
+  - name: cadabra2-jupyter-kernel
     build:
       skip: True  # [win]
     requirements:
