@@ -5,7 +5,7 @@ Home: https://github.com/kpeeters/cadabra2
 
 Package license: GPL-3.0-only
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: a field-theory motivated approach to computer algebra
 
@@ -29,6 +29,13 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
+              <td>linux_python3.6.____73_pypy</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9455&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/cadabra2-feedstock?branchName=master&jobName=linux&configuration=linux_python3.6.____73_pypy" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
               <td>linux_python3.6.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9455&branchName=master">
@@ -47,6 +54,13 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9455&branchName=master">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/cadabra2-feedstock?branchName=master&jobName=linux&configuration=linux_python3.8.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_python3.6.____73_pypy</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9455&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/cadabra2-feedstock?branchName=master&jobName=osx&configuration=osx_python3.6.____73_pypy" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -95,9 +109,9 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-cadabra--jupyter--kernel-green.svg)](https://anaconda.org/conda-forge/cadabra-jupyter-kernel) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/cadabra-jupyter-kernel.svg)](https://anaconda.org/conda-forge/cadabra-jupyter-kernel) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/cadabra-jupyter-kernel.svg)](https://anaconda.org/conda-forge/cadabra-jupyter-kernel) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/cadabra-jupyter-kernel.svg)](https://anaconda.org/conda-forge/cadabra-jupyter-kernel) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-cadabra2-green.svg)](https://anaconda.org/conda-forge/cadabra2) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/cadabra2.svg)](https://anaconda.org/conda-forge/cadabra2) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/cadabra2.svg)](https://anaconda.org/conda-forge/cadabra2) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/cadabra2.svg)](https://anaconda.org/conda-forge/cadabra2) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-cadabra2--gtk-green.svg)](https://anaconda.org/conda-forge/cadabra2-gtk) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/cadabra2-gtk.svg)](https://anaconda.org/conda-forge/cadabra2-gtk) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/cadabra2-gtk.svg)](https://anaconda.org/conda-forge/cadabra2-gtk) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/cadabra2-gtk.svg)](https://anaconda.org/conda-forge/cadabra2-gtk) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-cadabra2--jupyter--kernel-green.svg)](https://anaconda.org/conda-forge/cadabra2-jupyter-kernel) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/cadabra2-jupyter-kernel.svg)](https://anaconda.org/conda-forge/cadabra2-jupyter-kernel) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/cadabra2-jupyter-kernel.svg)](https://anaconda.org/conda-forge/cadabra2-jupyter-kernel) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/cadabra2-jupyter-kernel.svg)](https://anaconda.org/conda-forge/cadabra2-jupyter-kernel) |
 
 Installing cadabra2-split
 =========================
@@ -108,16 +122,16 @@ Installing `cadabra2-split` from the `conda-forge` channel can be achieved by ad
 conda config --add channels conda-forge
 ```
 
-Once the `conda-forge` channel has been enabled, `cadabra-jupyter-kernel, cadabra2, cadabra2-gtk` can be installed with:
+Once the `conda-forge` channel has been enabled, `cadabra2, cadabra2-gtk, cadabra2-jupyter-kernel` can be installed with:
 
 ```
-conda install cadabra-jupyter-kernel cadabra2 cadabra2-gtk
+conda install cadabra2 cadabra2-gtk cadabra2-jupyter-kernel
 ```
 
-It is possible to list all of the versions of `cadabra-jupyter-kernel` available on your platform with:
+It is possible to list all of the versions of `cadabra2` available on your platform with:
 
 ```
-conda search cadabra-jupyter-kernel --channel conda-forge
+conda search cadabra2 --channel conda-forge
 ```
 
 
