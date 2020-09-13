@@ -1,7 +1,7 @@
 MACOSX_DEPLOYMENT_TARGET:
 - '10.9'
 boost_cpp:
-- '1.72'
+- 1.74.0
 c_compiler:
 - clang
 c_compiler_version:
@@ -26,8 +26,6 @@ libuuid:
 - 2.32.1
 macos_machine:
 - x86_64-apple-darwin13.4.0
-macos_min_version:
-- '10.9'
 pin_run_as_build:
   boost-cpp:
     max_pin: x.x.x
@@ -47,8 +45,10 @@ pin_run_as_build:
   zeromq:
     max_pin: x.x
 python:
-- 3.8.* *_cpython
+- 3.6.* *_cpython
 sqlite:
 - '3'
+target_platform:
+- osx-64
 zeromq:
 - 4.3.2
