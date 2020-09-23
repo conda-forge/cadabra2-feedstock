@@ -1,0 +1,54 @@
+MACOSX_DEPLOYMENT_TARGET:
+- '10.9'
+boost_cpp:
+- 1.74.0
+c_compiler:
+- clang
+c_compiler_version:
+- '10'
+cairo:
+- '1.16'
+channel_sources:
+- conda-forge,defaults
+channel_targets:
+- conda-forge main
+cxx_compiler:
+- clangxx
+cxx_compiler_version:
+- '10'
+glib:
+- '2.58'
+gmp:
+- '6'
+jsoncpp:
+- 1.8.4
+libuuid:
+- 2.32.1
+macos_machine:
+- x86_64-apple-darwin13.4.0
+pin_run_as_build:
+  boost-cpp:
+    max_pin: x.x.x
+  cairo:
+    max_pin: x.x
+  gmp:
+    max_pin: x
+  jsoncpp:
+    max_pin: x.x.x
+  libuuid:
+    max_pin: x
+  python:
+    min_pin: x.x
+    max_pin: x.x
+  sqlite:
+    max_pin: x
+  zeromq:
+    max_pin: x.x
+python:
+- 3.6.* *_73_pypy
+sqlite:
+- '3'
+target_platform:
+- osx-64
+zeromq:
+- 4.3.2
