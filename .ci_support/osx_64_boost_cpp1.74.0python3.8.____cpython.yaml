@@ -52,3 +52,6 @@ target_platform:
 - osx-64
 zeromq:
 - 4.3.2
+zip_keys:
+- - c_compiler_version
+  - cxx_compiler_version
