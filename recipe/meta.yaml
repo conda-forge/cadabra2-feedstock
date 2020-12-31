@@ -1,5 +1,5 @@
 {% set name = "cadabra2" %}
-{% set version = "2.3.0" %}
+{% set version = "2.3.6.2" %}
 
 package:
   name: cadabra2-split
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/kpeeters/cadabra2/releases/download/{{ version }}/cadabra2-{{ version }}.tar.gz
-  sha256: 144b4123e0e1f89592dc5e51e30c0e3ecf819a3288f5e1c88bddc7474e9f8a56
+  sha256: 8727500ca814be68c9b583f9686d7807eb9f33e530e31d7480f6f72f36a2263b
 
 build:
-  number: 4
-  skip: True  # [win]
+  number: 0
+  skip: true  # [win]
 
 requirements:
   build:
@@ -55,7 +55,7 @@ requirements:
     - cairo
     - atkmm-1.6
     - gtkmm
-    
+
     - xeus
     - zeromq
     - cppzmq
@@ -144,7 +144,7 @@ outputs:
 
   - name: cadabra2-jupyter-kernel
     build:
-      skip: True  # [win]
+      skip: true  # [win]
     requirements:
       build:
         - {{ compiler('c') }}
@@ -185,7 +185,7 @@ about:
     - libs/linenoise/LICENSE
     - libs/tiny-process-library/LICENSE
     - libs/whereami/LICENSE.WTFPLv2
-  summary: 'a field-theory motivated approach to computer algebra'
+  summary: a field-theory motivated approach to computer algebra
 
 extra:
   recipe-maintainers:
