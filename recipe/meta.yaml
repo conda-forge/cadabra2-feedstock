@@ -82,7 +82,7 @@ outputs:
         - matplotlib-base
     files:
       - lib/python*/site-packages/cdb/**/*
-      - lib/python*/site-packages/cadabra2.so
+      - lib/python*/site-packages/cadabra2.*so
       - lib/python*/site-packages/cdb_appdirs.py
       - lib/python*/site-packages/cadabra2_defaults.py
       - share/man/man1/cadabra2.1
@@ -92,7 +92,6 @@ outputs:
       imports:
         - cadabra2
       commands:
-        - test -f $PREFIX/share/cadabra2/python/cadabra2.so
         - test -f $PREFIX/share/cadabra2/latex/preamble.tex
 
   - name: cadabra2-gtk
