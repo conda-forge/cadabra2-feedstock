@@ -17,9 +17,6 @@ cmake \
 make -j${CPU_COUNT}
 make install
 
-mkdir -p $PREFIX/share/cadabra2
-ln -s $SP_DIR $PREFIX/share/cadabra2/python
-
 # Following test fails with no module named `module03` found.
 TESTS_TO_SKIP="modules"
 if [[ "$target_platform" == osx* ]]; then
