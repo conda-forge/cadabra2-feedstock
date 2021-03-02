@@ -26,6 +26,8 @@ jsoncpp:
 - 1.9.4
 libuuid:
 - 2.32.1
+pcre:
+- '8'
 pin_run_as_build:
   boost-cpp:
     max_pin: x.x.x
