@@ -3,29 +3,29 @@ boost_cpp:
 c_compiler:
 - gcc
 c_compiler_version:
-- '9'
+- '10'
 cairo:
 - '1.16'
 cdt_name:
 - cos6
 channel_sources:
-- conda-forge,defaults
+- conda-forge
 channel_targets:
 - conda-forge main
 cxx_compiler:
 - gxx
 cxx_compiler_version:
-- '9'
+- '10'
 docker_image:
-- quay.io/condaforge/linux-anvil-comp7
+- quay.io/condaforge/linux-anvil-cos7-x86_64
 glib:
 - '2'
 gmp:
 - '6'
 jsoncpp:
-- 1.9.4
+- 1.9.5
 libuuid:
-- 2.32.1
+- '2'
 pcre:
 - '8'
 pin_run_as_build:
@@ -57,5 +57,3 @@ zeromq:
 zip_keys:
 - - c_compiler_version
   - cxx_compiler_version
-- - cdt_name
-  - docker_image

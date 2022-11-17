@@ -5,25 +5,25 @@ boost_cpp:
 c_compiler:
 - clang
 c_compiler_version:
-- '11'
+- '14'
 cairo:
 - '1.16'
 channel_sources:
-- conda-forge,defaults
+- conda-forge
 channel_targets:
 - conda-forge main
 cxx_compiler:
 - clangxx
 cxx_compiler_version:
-- '11'
+- '14'
 glib:
 - '2'
 gmp:
 - '6'
 jsoncpp:
-- 1.9.4
+- 1.9.5
 libuuid:
-- 2.32.1
+- '2'
 macos_machine:
 - x86_64-apple-darwin13.4.0
 pcre:
@@ -47,7 +47,7 @@ pin_run_as_build:
   zeromq:
     max_pin: x.x
 python:
-- 3.6.* *_cpython
+- 3.8.* *_73_pypy
 sqlite:
 - '3'
 target_platform:
