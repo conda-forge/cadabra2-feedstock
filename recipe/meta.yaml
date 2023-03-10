@@ -1,16 +1,16 @@
 {% set name = "cadabra2" %}
-{% set version = "2.3.0" %}
+{% set version = "2.4.2" %}
 
 package:
   name: cadabra2-split
   version: {{ version }}
 
 source:
-  url: https://github.com/kpeeters/cadabra2/releases/download/{{ version }}/cadabra2-{{ version }}.tar.gz
-  sha256: 144b4123e0e1f89592dc5e51e30c0e3ecf819a3288f5e1c88bddc7474e9f8a56
+  url: https://github.com/kpeeters/cadabra2/archive/refs/tags/{{ version }}.tar.gz
+  sha256: 4057f70eb5ad950a25c68f100a3af6a41b4c85ba60d7d0441400b8931e76221e
 
 build:
-  number: 8
+  number: 0
   skip: True  # [win]
 
 requirements:
