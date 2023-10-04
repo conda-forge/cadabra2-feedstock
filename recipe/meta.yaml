@@ -10,7 +10,7 @@ source:
   sha256: 144b4123e0e1f89592dc5e51e30c0e3ecf819a3288f5e1c88bddc7474e9f8a56
 
 build:
-  number: 8
+  number: 9
   skip: True  # [win]
 
 requirements:
@@ -43,7 +43,7 @@ requirements:
     - jsoncpp
     - pybind11
 
-    - boost-cpp
+    - libboost-devel
     - sqlite
     - pcre
     - gtkmm-3.0
@@ -110,7 +110,7 @@ outputs:
         - cairo
         - atkmm-1.6
         - jsoncpp
-        - boost-cpp
+        - libboost-devel
         - sqlite
         - python
       run:
@@ -118,7 +118,6 @@ outputs:
         - {{ pin_compatible("cairo") }}
         - {{ pin_compatible("glibmm") }}
         - {{ pin_compatible("glib") }}
-        - boost-cpp
         - python
         - {{ pin_subpackage("cadabra2", exact=True) }}
       run_constrained:
@@ -154,12 +153,11 @@ outputs:
         - libuuid
         - nlohmann_json
         - python
-        - boost-cpp
+        - libboost-devel
         - jsoncpp
         - glibmm
       run:
         - python
-        - boost-cpp
         # Remove these when they get run_exports
         - {{ pin_compatible("glibmm") }}
         - {{ pin_subpackage("cadabra2", exact=True) }}
