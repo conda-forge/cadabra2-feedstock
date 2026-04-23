@@ -10,8 +10,8 @@ source:
   sha256: 144b4123e0e1f89592dc5e51e30c0e3ecf819a3288f5e1c88bddc7474e9f8a56
 
 build:
-  number: 8
-  skip: True  # [win]
+  number: 9
+  skip: true  # [win]
 
 requirements:
   build:
@@ -20,22 +20,6 @@ requirements:
     - cmake
     - make
     - pkg-config
-    - {{ cdt('libice-devel') }}  # [linux]
-    - {{ cdt('libsm-devel') }}  # [linux]
-    - {{ cdt('libx11-devel') }}  # [linux]
-    - {{ cdt('libxcomposite-devel') }}  # [linux]
-    - {{ cdt('libxcursor-devel') }}  # [linux]
-    - {{ cdt('libxdamage-devel') }}  # [linux]
-    - {{ cdt('libxext-devel') }}  # [linux]
-    - {{ cdt('libxi-devel') }}  # [linux]
-    - {{ cdt('libxinerama-devel') }}  # [linux]
-    - {{ cdt('libxfixes-devel') }}  # [linux]
-    - {{ cdt('libxrandr-devel') }}  # [linux]
-    - {{ cdt('libxrender-devel') }}  # [linux]
-    - {{ cdt('libxtst-devel') }}  # [linux]
-    - {{ cdt('mesa-libEGL-devel') }}  # [linux]
-    - {{ cdt('mesa-libGL-devel') }}  # [linux]
-    - {{ cdt('xorg-x11-proto-devel') }}  # [linux]
 
   host:
     - python
@@ -55,7 +39,8 @@ requirements:
     - cairo
     - atkmm-1.6
     - gtkmm
-    
+    - zlib
+
     - xeus
     - zeromq
     - cppzmq
@@ -64,6 +49,22 @@ requirements:
     - libuuid
     # Needed for ctest
     - sympy
+    - xorg-libice                # [linux]
+    - xorg-libsm                # [linux]
+    - xorg-libx11                # [linux]
+    - xorg-libxcomposite                # [linux]
+    - xorg-libxcursor                # [linux]
+    - xorg-libxdamage                # [linux]
+    - xorg-libxext                # [linux]
+    - xorg-libxi                # [linux]
+    - xorg-libxinerama                # [linux]
+    - xorg-libxfixes                # [linux]
+    - xorg-libxrandr                 # [linux]
+    - xorg-libxrender                # [linux]
+    - xorg-libxtst                # [linux]
+    - libegl-devel                    # [linux]
+    - libgl-devel                    # [linux]
+    - xorg-xorgproto                          # [linux]
 
 outputs:
   - name: cadabra2
@@ -144,7 +145,7 @@ outputs:
 
   - name: cadabra2-jupyter-kernel
     build:
-      skip: True  # [win]
+      skip: true  # [win]
     requirements:
       build:
         - {{ compiler('c') }}
